@@ -1,85 +1,21 @@
-<div align="center">
-  <a href="https://eruda.liriliri.io/" target="_blank">
-    <img src="https://eruda.liriliri.io/icon.png" width="400">
-  </a>
-</div>
+# CODE
+A simple [online HTML sandbox for fast prototyping](https://nikita-kun.github.io/code), keeps code client-side (contrary to jsfiddle, codepen, and other major sandboxes) 
 
-<h1 align="center">Eruda</h1>
+[Demo usecase](https://nikita-kun.github.io/order/#title=Demo&viewMode=horizontal&gallerySize=3&contentOnly=0&viewStart=1&input=data%3Atext%2Fhtml%3Bcharset%3Dutf-8%2C%253C!DOCTYPE%2520html%253E%250A%253Chtml%2520lang%253D%2522en%2522%253E%250A%2509%253Chead%253E%250A%2509%2509%253Cmeta%2520charset%253D%2522UTF-8%2522%253E%250A%2509%2509%253Cmeta%2520name%253D%2522viewport%2522%2520content%253D%2522width%253Ddevice-width%252C%2520initial-scale%253D1.0%2522%253E%250A%2509%2509%253Ctitle%253EChat%2520Session%253C%252Ftitle%253E%250A%2509%2509%253Cstyle%253E%250A%2509%2509%2509body%2520%257B%250A%2509%2509%2509%2509margin%253A%25200%2520auto%253B%250A%2509%2509%2509%2509max-width%253A%252020cm%253B%250A%2509%2509%2509%2509height%253A%2520100vh%253B%250A%2509%2509%2509%2509display%253A%2520flex%253B%250A%2509%2509%2509%2509flex-direction%253A%2520column%253B%250A%2509%2509%2509%257D%250A%2509%2509%2509div%252C%2520input%2520%257B%250A%2509%2509%2509%2509padding%253A%25205mm%253B%250A%2509%2509%2509%2509border-radius%253A%25205mm%253B%250A%2509%2509%2509%257D%250A%2509%2509%2509.chat-container%2520%257B%250A%2509%2509%2509%2509display%253A%2520flex%253B%250A%2509%2509%2509%2509flex-direction%253A%2520column%253B%250A%2509%2509%2509%2509flex%253A%25201%253B%250A%2509%2509%2509%2509overflow-y%253A%2520scroll%253B%250A%2509%2509%2509%257D%250A%2509%2509%2509.message%2520%257B%250A%2509%2509%2509%2509margin-top%253A%25205mm%253B%250A%2509%2509%2509%2509align-self%253A%2520flex-start%253B%250A%2509%2509%2509%2509background-color%253A%2520%2523ccc%253B%250A%2509%2509%2509%2509max-width%253A%252080%2525%253B%250A%2509%2509%2509%257D%250A%2509%2509%2509.message.self%2520%257B%250A%2509%2509%2509%2509align-self%253A%2520flex-end%253B%2520%250A%2509%2509%2509%257D%250A%2509%2509%2509.input-field%2520%257B%250A%2509%2509%2509%2509display%253A%2520flex%253B%250A%2509%2509%2509%257D%250A%2509%2509%2509.input-field%2520input%2520%257B%250A%2509%2509%2509%2509flex%253A%25201%253B%250A%2509%2509%2509%2509border-radius%253A%25205mm%25200%25200%25205mm%253B%250A%2509%2509%2509%257D%250A%2509%2509%2509.input-field%2520button%2520%257B%250A%2509%2509%2509%2509border%253A%2520none%253B%250A%2509%2509%2509%2509border-radius%253A%25200%25205mm%25205mm%25200%253B%250A%2509%2509%2509%2509cursor%253A%2520pointer%253B%250A%2509%2509%2509%2509width%253A%252080px%253B%250A%2509%2509%2509%257D%250A%2509%2509%253C%252Fstyle%253E%250A%2509%253C%252Fhead%253E%250A%2509%253Cbody%253E%250A%2509%2509%253Cdiv%2520class%253D%2522chat-container%2522%253E%250A%2509%2509%2509%253Cdiv%2520class%253D%2522message%2522%253EYou%253A%2520I%2520want%2520a%2520program%2520in%2520JavaScript%253C%252Fdiv%253E%250A%2509%2509%2509%253Cdiv%2520class%253D%2522message%2520self%2522%253EiGPHLaM-5%253A%2520Anything%2520you%2520want%252C%2520as%2520long%2520as%2520you%2520give%2520me%2520your%2520tokens%253C%252Fdiv%253E%250A%2509%2509%2509%253Cdiv%2520class%253D%2522message%2522%253EYou%253A%2520I%2520want%2520a%2520complete%2520HTML%2520with%2520all%2520the%2520code%2520embedded%253A%2520the%2520page%2520is%2520an%2520empty%2520canvas%252C%2520assign%2520random%2520color%2520to%2520a%2520random%2520pixel%2520every%25200.1%2520seconds%253C%252Fdiv%253E%250A%2509%2509%2509%253Cdiv%2520class%253D%2522message%2520self%2522%253E%253Ccode%253E%2526lt%253B!DOCTYPE%2520html%2526gt%253B%253Cbr%252F%253E%2526lt%253Bhtml%2520lang%253D%2526quot%253Ben%2526quot%253B%2526gt%253B%253Cbr%252F%253E%2526lt%253Bhead%2526gt%253B%253Cbr%252F%253E%2526lt%253Bmeta%2520charset%253D%2526quot%253BUTF-8%2526quot%253B%2526gt%253B%253Cbr%252F%253E%2526lt%253Bmeta%2520name%253D%2526quot%253Bviewport%2526quot%253B%2520content%253D%2526quot%253Bwidth%253Ddevice-width%252C%2520initial-scale%253D1.0%2526quot%253B%2526gt%253B%253Cbr%252F%253E%2526lt%253Btitle%2526gt%253BRandom%2520Pixel%2520Color%2526lt%253B%252Ftitle%2526gt%253B%253Cbr%252F%253E%2526lt%253Bstyle%2526gt%253B%253Cbr%252F%253E%2520%2520%2520%2520body%2520%257Bmargin%253A%25200%253Boverflow%253A%2520hidden%253Bbackground%253A%2520black%253B%257D%253Cbr%252F%253E%2520%2520%2520%2520canvas%2520%257Bwidth%253A%2520100vw%253Bheight%253A%2520100vh%253Bdisplay%253A%2520block%253B%257D%253Cbr%252F%253E%2526lt%253B%252Fstyle%2526gt%253B%253Cbr%252F%253E%2526lt%253B%252Fhead%2526gt%253B%253Cbr%252F%253E%2526lt%253Bbody%2526gt%253B%253Cbr%252F%253E%2526lt%253Bcanvas%2520id%253D%2526quot%253BcolorCanvas%2526quot%253B%2526gt%253B%2526lt%253B%252Fcanvas%2526gt%253B%253Cbr%252F%253E%2526lt%253Bscript%2526gt%253B%253Cbr%252F%253E%2520%2520%2520%2520const%2520canvas%2520%253D%2520document.getElementById%28%2526%252339%253BcolorCanvas%2526%252339%253B%29%253B%253Cbr%252F%253E%2520%2520%2520%2520const%2520context%2520%253D%2520canvas.getContext%28%2526%252339%253B2d%2526%252339%253B%29%253B%253Cbr%252F%253E%2520%2520%2520%2520canvas.width%2520%253D%2520window.innerWidth%253B%253Cbr%252F%253E%2520%2520%2520%2520canvas.height%2520%253D%2520window.innerHeight%253B%253Cbr%252F%253E%2520%2520%2520%2520const%2520setRandomPixelColor%2520%253D%2520%28%29%2520%253D%2526gt%253B%2520%257B%253Cbr%252F%253E%2520%2520%2520%2520%2520%2520%2520%2520const%2520x%2520%253D%2520Math.floor%28Math.random%28%29%2520*%2520canvas.width%29%253B%253Cbr%252F%253E%2520%2520%2520%2520%2520%2520%2520%2520const%2520y%2520%253D%2520Math.floor%28Math.random%28%29%2520*%2520canvas.height%29%253B%253Cbr%252F%253E%2520%2520%2520%2520%2520%2520%2520%2520context.fillStyle%2520%253D%2520%2560rgb%28%2524%257BMath.random%28%29%2520*%2520255%257D%252C%2520%2524%257BMath.random%28%29%2520*%2520255%257D%252C%2520%2524%257BMath.random%28%29%2520*%2520255%257D%29%2560%253B%253Cbr%252F%253E%2520%2520%2520%2520%2520%2520%2520%2520context.fillRect%28x%252C%2520y%252C%25201%252C%25201%29%253B%253Cbr%252F%253E%2520%2520%2520%2520%257D%253B%253Cbr%252F%253E%2520%2520%2520%2520setInterval%28setRandomPixelColor%252C%25201%29%253B%253Cbr%252F%253E%2526lt%253B%252Fscript%2526gt%253B%253Cbr%252F%253E%2526lt%253B%252Fbody%2526gt%253B%253Cbr%252F%253E%2526lt%253B%252Fhtml%2526gt%253B%253C%252Fcode%253E%253C%252Fdiv%253E%250A%2509%2509%253C%252Fdiv%253E%250A%2509%2509%253Cdiv%2520class%253D%2522input-field%2522%253E%250A%2509%2509%2509%253Cinput%2520type%253D%2522text%2522%2520readonly%2520placeholder%253D%2522You%2520are%2520out%2520of%2520tokens...%2522%253E%250A%2509%2509%2509%253Cbutton%253ESend%253C%252Fbutton%253E%250A%2509%2509%253C%252Fdiv%253E%250A%2509%253C%252Fbody%253E%250A%253C%252Fhtml%253E%0A%2Fcode%23input%3D%253C!DOCTYPE%2520html%253E%250A%253Chtml%2520lang%253D%2522en%2522%253E%250A%253Chead%253E%250A%253Cmeta%2520charset%253D%2522UTF-8%2522%253E%250A%253Cmeta%2520name%253D%2522viewport%2522%2520content%253D%2522width%253Ddevice-width%252C%2520initial-scale%253D1.0%2522%253E%250A%253Ctitle%253ERandom%2520Pixel%2520Color%253C%252Ftitle%253E%250A%253Cstyle%253E%250A%2520%2520%2520%2520body%2520%257Bmargin%253A%25200%253Boverflow%253A%2520hidden%253Bbackground%253A%2520black%253B%257D%250A%2520%2520%2520%2520canvas%2520%257Bwidth%253A%2520100vw%253Bheight%253A%2520100vh%253Bdisplay%253A%2520block%253B%257D%250A%253C%252Fstyle%253E%250A%253C%252Fhead%253E%250A%253Cbody%253E%250A%253Ccanvas%2520id%253D%2522colorCanvas%2522%253E%253C%252Fcanvas%253E%250A%253Cscript%253E%250A%2520%2520%2520%2520const%2520canvas%2520%253D%2520document.getElementById%2528%2527colorCanvas%2527%2529%253B%250A%2520%2520%2520%2520const%2520context%2520%253D%2520canvas.getContext%2528%25272d%2527%2529%253B%250A%2520%2520%2520%2520canvas.width%2520%253D%2520window.innerWidth%253B%250A%2520%2520%2520%2520canvas.height%2520%253D%2520window.innerHeight%253B%250A%2520%2520%2520%2520const%2520setRandomPixelColor%2520%253D%2520%2528%2529%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520const%2520x%2520%253D%2520Math.floor%2528Math.random%2528%2529%2520*%2520canvas.width%2529%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520const%2520y%2520%253D%2520Math.floor%2528Math.random%2528%2529%2520*%2520canvas.height%2529%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520context.fillStyle%2520%253D%2520%2560rgb%2528%2524%257BMath.random%2528%2529%2520*%2520255%257D%252C%2520%2524%257BMath.random%2528%2529%2520*%2520255%257D%252C%2520%2524%257BMath.random%2528%2529%2520*%2520255%257D%2529%2560%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520context.fillRect%2528x%252C%2520y%252C%25201%252C%25201%2529%253B%250A%2520%2520%2520%2520%257D%253B%250A%2520%2520%2520%2520setInterval%2528setRandomPixelColor%252C%25201%2529%253B%250A%253C%252Fscript%253E%250A%253C%252Fbody%253E%250A%253C%252Fhtml%253E%0A%2Fcode)
 
-<div align="center">
+## Features
+- Simple HTML sandbox
+- Accepts single HTML with embedded JS and CSS
+- Code is stored and rendered client-side
+- Console
+- Save as URL or file
+- Customizable (make a fork)
 
-Console for Mobile Browsers.
+## Considerations
+- Not all browser APIs and features work client-side
+- Not all HTML sources will work
+- No fancy features, work in progress
+- External dependencies (TODO bundling for offline-capability)
 
-[![NPM version][npm-image]][npm-url]
-[![Build status][ci-image]][ci-url]
-[![Test coverage][codecov-image]][codecov-url]
-[![Downloads][jsdelivr-image]][jsdelivr-url]
-[![License][license-image]][npm-url]
-
-</div>
-
-[npm-image]: https://img.shields.io/npm/v/eruda?style=flat-square
-[npm-url]: https://npmjs.org/package/eruda
-[jsdelivr-image]: https://img.shields.io/jsdelivr/npm/hm/eruda?style=flat-square
-[jsdelivr-url]: https://www.jsdelivr.com/package/npm/eruda
-[ci-image]: https://img.shields.io/github/actions/workflow/status/liriliri/eruda/main.yml?branch=master&style=flat-square
-[ci-url]: https://github.com/liriliri/eruda/actions/workflows/main.yml 
-[codecov-image]: https://img.shields.io/codecov/c/github/liriliri/eruda?style=flat-square
-[codecov-url]: https://codecov.io/github/liriliri/eruda?branch=master
-[license-image]: https://img.shields.io/npm/l/eruda?style=flat-square
-[donate-image]: https://img.shields.io/badge/$-donate-0070ba.svg?style=flat-square
-
-<img src="https://eruda.liriliri.io/screenshot.jpg" style="width:100%">
-
-## Demo
-
-![Demo](https://eruda.liriliri.io/qrcode.png)
-
-Browse it on your phone: [eruda.liriliri.io](https://eruda.liriliri.io/)
-
-## Install
-
-You can get it on npm.
-
-```bash
-npm install eruda --save-dev
-```
-
-Add this script to your page.
-
-```html
-<script src="node_modules/eruda/eruda.js"></script>
-<script>eruda.init();</script>
-```
-
-It's also available on [jsDelivr](http://www.jsdelivr.com/projects/eruda) and [cdnjs](https://cdnjs.com/libraries/eruda).
-
-```html
-<script src="https://cdn.jsdelivr.net/npm/eruda"></script>
-<script>eruda.init();</script>
-```
-
-For more detailed usage instructions, please read the documentation at [eruda.liriliri.io](https://eruda.liriliri.io/docs/)!
-
-## Related Projects
-
-* [eruda-android](https://github.com/liriliri/eruda-android): Simple webview with eruda loaded automatically.
-* [chii](https://github.com/liriliri/chii): Remote debugging tool.
-* [chobitsu](https://github.com/liriliri/chobitsu): Chrome devtools protocol JavaScript implementation.
-* [licia](https://github.com/liriliri/licia): Utility library used by eruda.
-* [luna](https://github.com/liriliri/luna): UI components used by eruda.
-* [vivy](https://github.com/liriliri/vivy-docs): Icon image generation.
-
-## Third Party
-
-* [eruda-pixel](https://github.com/Faithree/eruda-pixel): UI pixel restoration tool.
-* [eruda-webpack-plugin](https://github.com/huruji/eruda-webpack-plugin): Eruda webpack plugin.
-* [eruda-vue-devtools](https://github.com/Zippowxk/vue-devtools-plugin): Eruda Vue-devtools plugin.
-
-## Backers
-
-<a rel="noreferrer noopener" href="https://opencollective.com/eruda" target="_blank"><img src="https://opencollective.com/eruda/backers.svg?width=890"></a>
-
-## Contribution
-
-Read [Contributing Guide](https://eruda.liriliri.io/docs/contributing.html) for development setup instructions.
+Built with CodeMirror, Eruda, and pako. Licenses: MIT, zlib.
+Copyright (c) 2024 Nikita Korzhitskii
