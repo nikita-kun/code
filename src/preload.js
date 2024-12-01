@@ -1,6 +1,6 @@
 let dependencies = {
 	"codemirror": {
-		"cdns": [  "src/cdn/"],///*"https://cdn.jsdelivr.net/npm/codemirror@5.65.18/",*/ "src/cdn/"],
+		"cdns": [ "https://cdn.jsdelivr.net/npm/codemirror@5.65.18/", "src/cdn/"],
 		"items": ["lib/codemirror.min.js",
 			"lib/codemirror.min.css",
 			"theme/material.min.css",
@@ -21,11 +21,20 @@ let dependencies = {
 			"addon/edit/closetag.min.js"]
 	},
 	"eruda": {
-		"cdns": ["https://cdn.jsdelivr.net/npm/", "src/cdn/"],
-		"items": ["eruda@3.4.1",
-			"eruda-monitor@1.1.1",
-			"eruda-timing@2.0.1",
-			"eruda-features@2.1.0"]
+		"cdns": ["https://cdn.jsdelivr.net/npm/eruda@3.4.1/", "src/cdn/"],
+		"items": ["eruda.min.js"]
+	},
+	"eruda-features": {
+		"cdns": ["https://cdn.jsdelivr.net/npm/eruda-features@2.1.0/", "src/cdn/"],
+		"items": ["eruda-features.min.js"]
+	},
+	"eruda-monitor": {
+		"cdns": ["https://cdn.jsdelivr.net/npm/eruda-monitor@1.1.1/", "src/cdn/"],
+		"items": ["eruda-monitor.min.js"]
+	},
+	"eruda-timing": {
+		"cdns": ["https://cdn.jsdelivr.net/npm/eruda-timing@2.0.1/", "src/cdn/"],
+		"items": ["eruda-timing.min.js"]
 	},
 	"pako": {
 		"cdns": ["https://cdn.jsdelivr.net/npm/pako@1.0.11/", "src/cdn/"],
@@ -41,13 +50,13 @@ let dependencies = {
 	}
 };
 
-let templates = ["eruda@3.4.1",
-	"eruda-monitor@1.1.1",
-	"eruda-timing@2.0.1",
-	"eruda-features@2.1.0",
+let templates = ["eruda/eruda.min.js",
+	"eruda-monitor/eruda-monitor.min.js",
+	"eruda-timing/eruda-timing.min.js",
+	"eruda-features/eruda-features.min.js",
 	"src/storage.js",
 	"src/console.js",
-	"src/default.html"];	
+	"src/default.html"];
 	
 let preload = async function () {
 
@@ -100,4 +109,4 @@ let preload = async function () {
 };
 
 preload();
-document.querySelector('script[src="src/preload.js"]').remove()
+document.querySelector('script[src="src/preload.js"]').remove();

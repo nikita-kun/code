@@ -42,10 +42,10 @@ function refresh() {
 			html.slice(0, Math.max(insertIndex,0))
 			+ open
 			+ '<script>' + document.querySelector('[embed="src/storage.js"]').innerHTML + '<\/script>'
-			+ '<script>' + document.querySelector('[embed="eruda/eruda@3.4.1"]').innerHTML + '<\/script>'
-			+ '<script>' + document.querySelector('[embed="eruda/eruda-monitor@1.1.1"]').innerHTML + '<\/script>'
-			+ '<script>' + document.querySelector('[embed="eruda/eruda-timing@2.0.1"]').innerHTML + '<\/script>'
-			+ '<script>' + document.querySelector('[embed="eruda/eruda-features@2.1.0"]').innerHTML + '<\/script>'
+			+ '<script>' + document.querySelector('[embed="eruda/eruda.min.js"]').innerHTML + '<\/script>'
+			+ '<script>' + document.querySelector('[embed="eruda-monitor/eruda-monitor.min.js"]').innerHTML + '<\/script>'
+			+ '<script>' + document.querySelector('[embed="eruda-timing/eruda-timing.min.js"]').innerHTML + '<\/script>'
+			+ '<script>' + document.querySelector('[embed="eruda-features/eruda-features.min.js"]').innerHTML + '<\/script>'
 			+ '<script>' + document.querySelector('[embed="src/console.js"]').innerHTML + '<\/script>'
 			+ close
 			+ html.slice(insertIndex);
