@@ -1,0 +1,64 @@
+body {
+	margin: 0 auto;
+}
+
+.flexBlock {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #000;
+	position: relative;
+}
+
+#app {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+#editor {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	max-height: 35%;
+}
+
+#renderedContent{
+	width: 100%; 
+	height: 50vh; 
+	border: none;
+}
+
+textarea{
+	boder: none;
+}
+
+.resizer {
+	cursor: row-resize;
+	height: 10px;
+	background-color: darkgray;
+	width: 100%;
+	position: relative;
+}
+
+.CodeMirror-hints {
+	border: 1px solid #ddd;
+	background: white;
+	z-index: 1000;
+	max-height: 200px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding: 5px;
+}
+.CodeMirror-hint {
+	padding: 2px 5px;
+	cursor: pointer;
+}
+.CodeMirror-hint-active {
+	background: #007bff; 
+	color: white;
+}
+.CodeMirror-focused .CodeMirror-gutter{ 
+	background: #C3E88D; 
+}

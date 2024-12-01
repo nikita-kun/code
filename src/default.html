@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>Untitled</title>
+		<style>
+			body { margin:0 auto; max-width: 10cm; text-align: center; }
+		</style>
+	</head>
+	<body>
+		<h1></h1>
+		<p><button disabled>~</button> console</p>
+		<p><button disabled>Alt-Enter</button> send command</p>
+		<p><button disabled>Esc</button> hide console</p>
+		<p><button disabled>Ctrl-S</button> focus on refreshed code or double-click <button disabled>~</button> icon</p>
+		<p><button disabled>Ctrl-E</button> focus on editor</p>
+		<p><button disabled>Shift-Tab</button> indent code</p>
+
+		<h3>Test console</h3>
+		<p><a href="#" onclick="eval(this.innerText)">console.log(Math.random())</a></p>
+		<p><a href="#" onclick="eval(this.innerText)">console.warn(Math.random())</a></p>
+		<p><a href="#" onclick="eval(this.innerText)">console.error(Math.random())</a></p>
+
+		<script>
+			document.querySelector('h1').innerHTML += "It works!"
+		</script>
+	</body>
+</html>
