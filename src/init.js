@@ -80,12 +80,14 @@ function saveEditorAsHTMLFile(onlyReturnData = false) {
 	body.innerHTML = document.querySelector('body').innerHTML;
 
 	body.querySelector(".CodeMirror").remove();
-	name = head.querySelector("title").innerHTML.replaceAll(":", "");
+	name = head.querySelector("title").innerHTML.replace(/:/g, '');
 	
 	if (!document.body.hasAttribute("offline")){
 		body.innerHTML += `<script>start();<\/script>`;
 		name = "OFFLINE " + name;
 	}
+	
+	body.querySelector('#renderedContent').src = '';
 	
 	head.querySelector("title").innerHTML = name;
 	
@@ -107,7 +109,7 @@ function getTitle(data) {
 	const fragmentElement = document.createElement('fragment');
 	fragmentElement.innerHTML = data;
 	const titleElement = fragmentElement.querySelector('title');
-	return titleElement && titleElement.innerText ? titleElement.innerText.replaceAll(' ', '') : null;
+	return titleElement && titleElement.innerText ? titleElement.innerText.replace(/ /g, '') : null;
 }
 
 function updateTitle(title, prepend = "CODE: "){
