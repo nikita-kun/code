@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 			Array.from(m.addedNodes).forEach((n) => {
 				var el = n && n.querySelector ? n.querySelector(`pre.${pre}code`) : null;
 				if (el && el.innerHTML && el.innerHTML.startsWith(pre))
-					el.innerHTML = el.innerHTML.replaceAll(pre, '');
+					el.innerHTML = el.innerHTML.replace(RegExp(`${pre}`,'g'),'')
 			});
 		});
 	}).observe(eruda._$el[0], {
