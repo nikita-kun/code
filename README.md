@@ -21,7 +21,7 @@ A simple [online/offline HTML sandbox for fast prototyping](https://nikita-kun.g
 
 Built with CodeMirror, Eruda, and pako. Licenses: MIT, zlib.
 
-[Source code](https://github.com/nikita-kun/code) Copyright (c) 2024 Nikita Korzhitskii
+[Source code](https://github.com/nikita-kun/code) Copyright (c) 2024 [Nikita Korzhitskii](https://nikita-kun.github.io/)
 
 <!-- 
 	TODOs:
