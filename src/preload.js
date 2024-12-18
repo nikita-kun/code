@@ -28,14 +28,6 @@ let dependencies = {
 		"cdns": ["https://cdn.jsdelivr.net/npm/eruda-features@2.1.0/", "src/cdn/"],
 		"items": ["eruda-features.min.js"]
 	},
-	"eruda-monitor": {
-		"cdns": ["https://cdn.jsdelivr.net/npm/eruda-monitor@1.1.1/", "src/cdn/"],
-		"items": ["eruda-monitor.min.js"]
-	},
-	"eruda-timing": {
-		"cdns": ["https://cdn.jsdelivr.net/npm/eruda-timing@2.0.1/", "src/cdn/"],
-		"items": ["eruda-timing.min.js"]
-	},
 	"pako": {
 		"cdns": ["https://cdn.jsdelivr.net/npm/pako@1.0.11/", "src/cdn/"],
 		"items": ["dist/pako.min.js"]
@@ -51,8 +43,6 @@ let dependencies = {
 };
 
 let templates = ["eruda/eruda.min.js",
-	"eruda-monitor/eruda-monitor.min.js",
-	"eruda-timing/eruda-timing.min.js",
 	"eruda-features/eruda-features.min.js",
 	"src/storage.js",
 	"src/console.js",

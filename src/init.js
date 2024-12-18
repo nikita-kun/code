@@ -44,8 +44,6 @@ function refresh() {
 			+ open
 			+ '<script>' + document.querySelector('[embed="src/storage.js"]').innerHTML + '<\/script>'
 			+ '<script>' + document.querySelector('[embed="eruda/eruda.min.js"]').innerHTML + '<\/script>'
-			+ '<script>' + document.querySelector('[embed="eruda-monitor/eruda-monitor.min.js"]').innerHTML + '<\/script>'
-			+ '<script>' + document.querySelector('[embed="eruda-timing/eruda-timing.min.js"]').innerHTML + '<\/script>'
 			+ '<script>' + document.querySelector('[embed="eruda-features/eruda-features.min.js"]').innerHTML + '<\/script>'
 			+ '<script>' + document.querySelector('[embed="src/console.js"]').innerHTML + '<\/script>'
 			+ close

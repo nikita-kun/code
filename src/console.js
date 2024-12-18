@@ -119,8 +119,6 @@ document.addEventListener('DOMContentLoaded', async function () {
 		subtree: true
 	});
 
-	eruda.add(erudaTiming);
-	eruda.add(erudaMonitor);
 	eruda.add(erudaFeatures);
 
 	eruda.show();
