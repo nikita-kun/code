@@ -4,6 +4,7 @@ var editor;
 if (window.location.href.includes('?'))
 	document.head.innerHTML += `<meta http-equiv="refresh" content="0; url=${window.location.href.replace('?', '#')}" />`;
 
+const app = document.getElementById('app');
 const htmlInput = document.getElementById('htmlInput');
 const resizer = document.querySelector('.resizer');
 const editorContainer = document.getElementById('editor');
@@ -54,6 +55,7 @@ function refresh() {
 	const dataUrl = 'data:text/html;charset=utf-8,' + encodedHtml;
 	renderedContent.src = dataUrl;
 	renderedContent.focus();
+	app.classList.add('ready');
 }
 
 function saveAsHTMLFile(data, name = 'result') {

@@ -12,9 +12,14 @@ body {
 }
 
 #app {
-	display: flex;
+	display:flex;
 	flex-direction: column;
 	height: 100vh;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+#app.ready {
+	opacity: 1;
 }
 
 #editor {
@@ -28,10 +33,6 @@ body {
 	width: 100%; 
 	height: 50vh; 
 	border: none;
-}
-
-textarea{
-	boder: none;
 }
 
 .resizer {
