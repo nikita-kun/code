@@ -71,6 +71,22 @@ eruda.add({
 	destroy() {}
 });
 
+eruda.add({
+	name: 'Readme',
+	init($el) {
+		this._$el = $el;
+		this._$el[0].innerHTML = `<style>.intro{width: 100%; height: 100%; background: #ddf;}</style>
+		<iframe class='intro' loading='lazy' src="https://nikita-kun.github.io/code/intro"></iframe>`;
+	},
+	show() {
+		this._$el.show();
+	},
+	hide() {
+		this._$el.hide();
+	},
+	destroy() {}
+});
+
 document.addEventListener('DOMContentLoaded', async function () {
 	let console = eruda.get('console');
 	eruda.get('info')._infos = eruda.get('info')._infos.filter((i) => {
